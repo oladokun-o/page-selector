@@ -1,3 +1,8 @@
-<button type="button">
-  Done
-</button>
+<button
+  type="button"
+  (click)="clicked.emit()"
+  [innerHTML]="buttonText"
+  role="button"
+  tabindex="0"
+  aria-label="Confirm selection"
+></button>

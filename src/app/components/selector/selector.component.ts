@@ -24,11 +24,19 @@ export class SelectorComponent {
     { title: 'Page 6', selected: false },
   ];
 
-  isAllSelected: boolean = false;
+  isAllSelected = false;
+
+  get selectedPages(): SelectorItem[] {
+    return this.selectorItems.filter(item => item.selected);
+  }
 
   toggleSelectAll() {
     this.isAllSelected = !this.isAllSelected;
-    this.isAllSelected ? this.selectAll() : this.deselectAll();
+    if (this.isAllSelected) {
+      this.selectAll();
+    } else {
+      this.deselectAll();
+    }
   }
 
   selectAll() {
@@ -43,4 +51,9 @@ export class SelectorComponent {
     item.selected = !item.selected;
     this.isAllSelected = this.selectorItems.every((item) => item.selected);
   }
+
+  onDoneClick(): void {
+  const selectedPages = this.selectedPages;
+  console.log('Selected Pages:', selectedPages);
+}
 }

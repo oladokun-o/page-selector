@@ -1,61 +1,75 @@
-# PageSelector
+# Page Selector Component
 
-A simple Angular 19 project implementing a page selection component with options to select all pages, individual pages, and a 'Done' button to confirm selections. Developed as part of a test assignment.
+This project is a pixel-perfect implementation of a page selector component. It demonstrates a developer's ability to replicate designs accurately using Angular 19, HTML, CSS, and JavaScript/TypeScript. The component allows users to select pages, including an "All Pages" option, and confirm their selection using a "Done" button.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+## Live Demo
 
-## Development server
+Check out the live version here: [Live Demo](https://page-selector-component.netlify.app/)
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+- Pixel-perfect design replication.
+- Interactive "Select All" functionality.
+- Checkbox states: Normal, Hover, Pressing, Checked.
+- Dynamic page selection.
+- Fully responsive design.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Technologies Used
 
-## Code scaffolding
+- **Angular 19**
+- **HTML5**
+- **CSS3**
+- **JavaScript/TypeScript**
+- **Netlify** (for hosting)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Setup Instructions
 
-```bash
-ng generate component component-name
-```
+To run this project locally, follow these steps:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. Clone the repository:
 
-```bash
-ng generate --help
-```
+   ```bash
+   git clone https://github.com/oladokun-o/page-selector.git
+   ```
 
-## Building
+2. Navigate to the project directory:
 
-To build the project run:
+   ```bash
+   cd page-selector
+   ```
 
-```bash
-ng build
-```
+3. Install dependencies:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+   ```bash
+   npm install
+   ```
 
-## Running unit tests
+4. Start the development server:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+   ```bash
+   ng serve
+   ```
 
-```bash
-ng test
-```
+5. Open the app in your browser at [http://localhost:4200](http://localhost:4200).
 
-## Running end-to-end tests
+## Screenshots
 
-For end-to-end (e2e) testing, run:
+![Screenshot 1](https://page-selector-component.netlify.app/assets/images/image-1.png)
+![Screenshot 2](https://page-selector-component.netlify.app/assets/images/image-2.png)
 
-```bash
-ng e2e
-```
+## Future Enhancements
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- Add animations for smoother transitions between checkbox states.
+- Improve accessibility by implementing ARIA roles and labels.
+- Integrate the component with a backend for dynamic data retrieval.
 
-## Additional Resources
+## License
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it as per the license terms.
+
+## Credits
+
+- **SVG Icons**: Extracted directly from the Figma design provided in the assignment.
+- **Hosted on**: [Netlify](https://netlify.com)
+
+---

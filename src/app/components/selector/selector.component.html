@@ -1,4 +1,4 @@
-<div class="selector">
+<div class="selector" role="group" aria-labelledby="page-selector-label">
   <div class="card">
     <div class="col-12 py-0">
       <div class="selector-item">
@@ -24,7 +24,7 @@
       <hr />
 
       <div class="selector-submit">
-        <app-button></app-button>
+        <app-button buttonText="Done" (clicked)="onDoneClick()"></app-button>
       </div>
     </div>
   </div>

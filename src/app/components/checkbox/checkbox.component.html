@@ -1,6 +1,13 @@
-<div class="selector-item__checkbox">
+<div
+  class="selector-item__checkbox"
+  role="checkbox"
+  tabindex="0"
+  [attr.aria-checked]="checked"
+  (keydown)="onKeyDown($event)"
+>
   <input
     type="checkbox"
+    aria-hidden="true"
     id="selector-item__checkbox_{{ label }}"
     [checked]="checked"
     (change)="checkedChange.emit()"
