@@ -10,6 +10,8 @@ button {
   font-weight: normal;
   padding: 10px 20px;
   transition: background-color 0.2s ease, transform 0.1s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on mobile */
 }
 
 button:hover {
