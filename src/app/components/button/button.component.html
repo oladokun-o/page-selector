@@ -1,8 +1,9 @@
 <button
-  type="button"
-  (click)="clicked.emit()"
-  [innerHTML]="buttonText"
+type="submit"
   role="button"
   tabindex="0"
   aria-label="Confirm selection"
-></button>
+  [disabled]="disabled"
+>
+{{ buttonText }}
+  </button>

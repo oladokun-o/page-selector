@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-checkbox',
@@ -9,16 +9,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './checkbox.component.css',
 })
 export class CheckboxComponent {
-  @Input() checked?: boolean = false;
   @Input() label = '';
-  @Output() checkedChange: EventEmitter<void> = new EventEmitter<void>();
+  @Input() control!: FormControl;
+
+  @Output() checkedChange: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   onKeyDown(event: KeyboardEvent): void {
     if (event.key === ' ' || event.key === 'Enter') {
-      // Toggle checkbox state
-      this.checked = !this.checked;
-      this.checkedChange.emit();
+      const newValue = !this.control.value;
+      this.control.setValue(newValue);
+      this.checkedChange.emit(newValue);
       event.preventDefault();
     }
+  }
+
+  onCheckedChange(): void {
+    this.checkedChange.emit(this.control.value);
   }
 }

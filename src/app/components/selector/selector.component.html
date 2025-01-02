@@ -1,9 +1,9 @@
-<div class="selector" role="group" aria-labelledby="page-selector-label">
+<form class="selector" [formGroup]="selectorForm" (ngSubmit)="onSubmit()" role="group" aria-labelledby="page-selector-label">
   <div class="card">
     <div class="col-12 py-0">
       <div class="selector-item">
         <app-checkbox style="width: 100%;"
-            [checked]="isAllSelected"
+            [control]="selectAllControl"
             label="All pages"
             (checkedChange)="toggleSelectAll()"
           ></app-checkbox>
@@ -12,11 +12,11 @@
       <hr />
 
       <ul>
-        <li class="selector-item" *ngFor="let item of selectorItems">
+        <li class="selector-item" *ngFor="let item of selectorItems; let i = index">
           <app-checkbox style="width: 100%;"
-            [checked]="item.selected"
+            [control]="getFormControl(i)"
             [label]="item.title"
-            (checkedChange)="toggleItemSelection(item)"
+            (checkedChange)="toggleItemSelection()"
           ></app-checkbox>
         </li>
       </ul>
@@ -24,8 +24,8 @@
       <hr />
 
       <div class="selector-submit">
-        <app-button buttonText="Done" (clicked)="onDoneClick()"></app-button>
+        <app-button buttonText="Done" [disabled]="selectorForm.invalid"></app-button>
       </div>
     </div>
   </div>
-</div>
+</form>
