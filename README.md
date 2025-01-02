@@ -54,8 +54,8 @@ To run this project locally, follow these steps:
 
 ## Screenshots
 
-![Screenshot 1](https://page-selector-component.netlify.app/assets/images/image-1.png)
-![Screenshot 2](https://page-selector-component.netlify.app/assets/images/image-2.png)
+![Screenshot 1](./public/assets/images/image-1.png)
+![Screenshot 2](./public/assets/images/image-2.png)
 
 ## Future Enhancements
 
