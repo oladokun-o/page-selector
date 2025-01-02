@@ -1,6 +1,6 @@
 # Page Selector Component
 
-This project is a pixel-perfect implementation of a page selector component. It demonstrates a developer's ability to replicate designs accurately using Angular 19, HTML, CSS, and JavaScript/TypeScript. The component allows users to select pages, including an "All Pages" option, and confirm their selection using a "Done" button.
+This project is a pixel-perfect implementation of a page selector component, replicated design accurately using Angular 19, HTML, CSS, and JavaScript/TypeScript. The component allows users to select pages, including an "All Pages" option, and confirm their selection using a "Done" button.
 
 ## Live Demo
 
