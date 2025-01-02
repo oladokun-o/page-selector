@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.selector-item__checkbox:focus-visible {
+  outline: none;
+}
+
 label.selector-item__title {
   font-size: 14px;
   width: inherit;
@@ -11,6 +15,9 @@ label.selector-item__title {
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on mobile */
 }
 
 .selector-item__checkbox {
