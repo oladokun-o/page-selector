@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58d1aed0-527e-4406-b159-0df8326d807a/deploy-status)](https://app.netlify.com/sites/page-selector-component/deploys)
 # Page Selector Component
 
 This project is a pixel-perfect implementation of a page selector component, replicated design accurately using Angular 19, HTML, CSS, and JavaScript/TypeScript. The component allows users to select pages, including an "All Pages" option, and confirm their selection using a "Done" button.
