@@ -1,0 +1,31 @@
+<div class="selector">
+  <div class="card">
+    <div class="col-12 py-0">
+      <div class="selector-item">
+        <app-checkbox style="width: 100%;"
+            [checked]="isAllSelected"
+            label="All pages"
+            (checkedChange)="toggleSelectAll()"
+          ></app-checkbox>
+      </div>
+
+      <hr />
+
+      <ul>
+        <li class="selector-item" *ngFor="let item of selectorItems">
+          <app-checkbox style="width: 100%;"
+            [checked]="item.selected"
+            [label]="item.title"
+            (checkedChange)="toggleItemSelection(item)"
+          ></app-checkbox>
+        </li>
+      </ul>
+
+      <hr />
+
+      <div class="selector-submit">
+        <app-button></app-button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="selector-item__checkbox">
+  <input
+    type="checkbox"
+    id="selector-item__checkbox_{{ label }}"
+    [checked]="checked"
+    (change)="checkedChange.emit()"
+  />
+  <label
+    role="button"
+    for="selector-item__checkbox_{{ label }}"
+    class="selector-item__title"
+  >
+    <span class="custom-checkbox"></span>{{ label }}</label
+  >
+</div>

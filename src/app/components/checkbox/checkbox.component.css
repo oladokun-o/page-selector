@@ -1,0 +1,74 @@
+/* Container */
+.selector-item__checkbox {
+  width: 100%;
+}
+
+label.selector-item__title {
+  font-size: 14px;
+  width: inherit;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.selector-item__checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Hidden checkbox input */
+.selector-item__checkbox input {
+  display: none;
+}
+
+/* Custom checkbox appearance */
+label .custom-checkbox {
+  width: 21px;
+  height: 21px;
+  background-color: white; /* Normal state */
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, outline;
+}
+
+/* Hover state */
+.selector-item__checkbox input:hover + label .custom-checkbox {
+  border-color: #bdbdbd;
+  background-image: url(/assets/icons/hover.svg); /* Faint checkmark SVG */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Pressing state */
+.selector-item__checkbox input:active + label .custom-checkbox {
+  outline: 3px solid #e9f0fe;
+  background-image: url(/assets/icons/pressing.svg); /* Bolder checkmark SVG */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Checked state */
+.selector-item__checkbox input:checked + label .custom-checkbox {
+  background-color: #2469F6;
+  background-image: url(/assets/icons/checked.svg); /* White checkmark */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: #2469F6;
+}
+
+/* Checked + Hover */
+.selector-item__checkbox input:checked:hover + label .custom-checkbox {
+  background-color: #5087F8;
+  border-color: #5087F8;
+}
+
+/* Checked + Pressing */
+.selector-item__checkbox input:checked:active + label .custom-checkbox {
+  outline: 3px solid #e9f0fe;
+}
