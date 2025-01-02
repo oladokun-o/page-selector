@@ -11,6 +11,7 @@ Check out the live version here: [Live Demo](https://page-selector-component.net
 - Pixel-perfect design replication.
 - Interactive "Select All" functionality.
 - Checkbox states: Normal, Hover, Pressing, Checked.
+- Accessibility enhancements.
 - Dynamic page selection.
 - Fully responsive design.
 
@@ -59,8 +60,6 @@ To run this project locally, follow these steps:
 
 ## Future Enhancements
 
-- Add animations for smoother transitions between checkbox states.
-- Improve accessibility by implementing ARIA roles and labels.
 - Integrate the component with a backend for dynamic data retrieval.
 
 ## License
